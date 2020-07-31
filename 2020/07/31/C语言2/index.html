@@ -7,15 +7,15 @@
   
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="​    C 语言指针  数组名的值就是这个数组的第一个元素的地址。  函数名的值就是这个函数的地址。  字符串字面值常量作为右值时，就是这个字符串对应的字符数组的名称,也就是这个字符串在内存中的地址。  const的意思   onst在星号左边表示所指变量是常量，const在星号右边表示所指指针自身是常量 在函数后面加const表示函数内任意变量都不能被修改。只能有读的操作">
+  <meta name="description" content="C语言2 123456789101112131415161718192021main()&amp;#123;    int i,j,a[5]&#x3D;&amp;#123;5,3,4,6,8&amp;#125;,t;    for(j&#x3D;0;j&lt;4;j++)    for(i&#x3D;0;i&lt;4-j;i++)    &amp;#123;        if (a[i]&gt;a[i+1])">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/2020/07/31/C%20%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88/index.html">
+<meta property="og:url" content="http://yoursite.com/2020/07/31/C%E8%AF%AD%E8%A8%802/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="​    C 语言指针  数组名的值就是这个数组的第一个元素的地址。  函数名的值就是这个函数的地址。  字符串字面值常量作为右值时，就是这个字符串对应的字符数组的名称,也就是这个字符串在内存中的地址。  const的意思   onst在星号左边表示所指变量是常量，const在星号右边表示所指指针自身是常量 在函数后面加const表示函数内任意变量都不能被修改。只能有读的操作">
+<meta property="og:description" content="C语言2 123456789101112131415161718192021main()&amp;#123;    int i,j,a[5]&#x3D;&amp;#123;5,3,4,6,8&amp;#125;,t;    for(j&#x3D;0;j&lt;4;j++)    for(i&#x3D;0;i&lt;4-j;i++)    &amp;#123;        if (a[i]&gt;a[i+1])">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-07-31T09:48:20.795Z">
-<meta property="article:modified_time" content="2020-07-29T07:31:00.041Z">
+<meta property="article:published_time" content="2020-07-31T12:36:09.039Z">
+<meta property="article:modified_time" content="2020-07-31T12:36:09.250Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -66,10 +66,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-C 语言指针" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-C语言2" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2020/07/31/C%20%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88/" class="article-date">
-  <time datetime="2020-07-31T09:48:20.795Z" itemprop="datePublished">2020-07-31</time>
+    <a href="/2020/07/31/C%E8%AF%AD%E8%A8%802/" class="article-date">
+  <time datetime="2020-07-31T12:36:09.039Z" itemprop="datePublished">2020-07-31</time>
 </a>
     
   </div>
@@ -78,23 +78,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>​    C 语言指针</p>
-<ul>
-<li><p>数组名的值就是这个数组的第一个元素的地址。</p>
-</li>
-<li><p>函数名的值就是这个函数的地址。</p>
-</li>
-<li><p>字符串字面值常量作为右值时，就是这个字符串对应的字符数组的名称,也就是这个字符串在内存中的地址。 </p>
-<p>const的意思</p>
-</li>
-</ul>
-<p><em>onst在星号左边表示所指变量是常量，const在星号右边表示所指指针自身是常量</em></p>
-<p>在函数后面加const表示函数内任意变量都不能被修改。只能有读的操作</p>
-
+        <p>C语言2</p>
+<figure class="highlight plain"><figcaption><span><stdio.h></span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">main()</span><br><span class="line">&#123;</span><br><span class="line">    int i,j,a[5]&#x3D;&#123;5,3,4,6,8&#125;,t;</span><br><span class="line">    for(j&#x3D;0;j&lt;4;j++)</span><br><span class="line">    for(i&#x3D;0;i&lt;4-j;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        if (a[i]&gt;a[i+1])</span><br><span class="line">         &#123;</span><br><span class="line">             t&#x3D;a[i];</span><br><span class="line">             a[i]&#x3D;a[i+1]; </span><br><span class="line">             a[i+1]&#x3D;t;</span><br><span class="line">         &#125;</span><br><span class="line">    </span><br><span class="line">    &#125;</span><br><span class="line">    for(i&#x3D;0;i&lt;5;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        printf(&quot;%d\n&quot;,a[i]);</span><br><span class="line">    &#125;</span><br><span class="line">        printf(&quot;%d\n&quot;,a[0]);</span><br><span class="line">&#125;</span><br><span class="line">    </span><br></pre></td></tr></table></figure>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/07/31/C%20%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88/" data-id="ckda7qqh500027onk37lmae8w" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/07/31/C%E8%AF%AD%E8%A8%802/" data-id="ckda7qqgt00007onk6scu359f" class="article-share-link">Share</a>
       
       
     </footer>
@@ -103,19 +92,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2020/07/31/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87C%E8%AF%AD%E8%A8%80%E6%96%87%E7%AB%A0/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          (no title)
-        
-      </div>
-    </a>
   
-  
-    <a href="/2020/07/31/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2020/07/31/C%E8%AF%AD%E8%A8%80/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Hello World</div>
+      <div class="article-nav-title"></div>
     </a>
   
 </nav>

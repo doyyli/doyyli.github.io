@@ -64,6 +64,60 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-C语言2" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/07/31/C%E8%AF%AD%E8%A8%802/" class="article-date">
+  <time datetime="2020-07-31T12:36:09.039Z" itemprop="datePublished">2020-07-31</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>C语言2</p>
+<figure class="highlight plain"><figcaption><span><stdio.h></span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">main()</span><br><span class="line">&#123;</span><br><span class="line">    int i,j,a[5]&#x3D;&#123;5,3,4,6,8&#125;,t;</span><br><span class="line">    for(j&#x3D;0;j&lt;4;j++)</span><br><span class="line">    for(i&#x3D;0;i&lt;4-j;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        if (a[i]&gt;a[i+1])</span><br><span class="line">         &#123;</span><br><span class="line">             t&#x3D;a[i];</span><br><span class="line">             a[i]&#x3D;a[i+1]; </span><br><span class="line">             a[i+1]&#x3D;t;</span><br><span class="line">         &#125;</span><br><span class="line">    </span><br><span class="line">    &#125;</span><br><span class="line">    for(i&#x3D;0;i&lt;5;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        printf(&quot;%d\n&quot;,a[i]);</span><br><span class="line">    &#125;</span><br><span class="line">        printf(&quot;%d\n&quot;,a[0]);</span><br><span class="line">&#125;</span><br><span class="line">    </span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/07/31/C%E8%AF%AD%E8%A8%802/" data-id="ckda7qqgt00007onk6scu359f" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-C语言" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/07/31/C%E8%AF%AD%E8%A8%80/" class="article-date">
+  <time datetime="2020-07-31T12:19:22.590Z" itemprop="datePublished">2020-07-31</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>C语言</p>
+<figure class="highlight plain"><figcaption><span><stdio.h></span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">int calrabbit(int month)</span><br><span class="line">&#123;</span><br><span class="line">int sum;</span><br><span class="line">if(month&gt;0&amp;&amp;month&lt;&#x3D;2)</span><br><span class="line">&#123;</span><br><span class="line">sum &#x3D; 1;</span><br><span class="line">&#125;</span><br><span class="line">if(month &#x3D;&#x3D; 3)</span><br><span class="line">&#123;</span><br><span class="line">sum &#x3D; 2;</span><br><span class="line">&#125;</span><br><span class="line">if(month &gt; 3)</span><br><span class="line">&#123;</span><br><span class="line">sum &#x3D; calrabbit( month-1)+calrabbit( month-2);</span><br><span class="line">&#125;</span><br><span class="line">return sum;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main(void)</span><br><span class="line">&#123;</span><br><span class="line">int month;</span><br><span class="line">while(1) &#x2F;&#x2F;为了便于检验所以用了循环。。。但是停不下来了。所以只能手动停止啦</span><br><span class="line">&#123;</span><br><span class="line">printf (&quot;month &#x3D; &quot;);scanf(&quot;%d&quot;,&amp;month);</span><br><span class="line">printf(&quot;%d月后共有%d对兔子\n\n&quot;,month,calrabbit(month));</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/07/31/C%E8%AF%AD%E8%A8%80/" data-id="ckda7qqh600037onk247t4uak" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-我的第一篇C语言文章" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/07/31/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87C%E8%AF%AD%E8%A8%80%E6%96%87%E7%AB%A0/" class="article-date">
@@ -82,7 +136,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/07/31/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87C%E8%AF%AD%E8%A8%80%E6%96%87%E7%AB%A0/" data-id="ckda2i4fg0000ccnkdqtr64l2" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/07/31/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87C%E8%AF%AD%E8%A8%80%E6%96%87%E7%AB%A0/" data-id="ckda7qqh800047onk7nzs4wkz" class="article-share-link">Share</a>
       
       
     </footer>
@@ -120,7 +174,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/07/31/C%20%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88/" data-id="ckda2i4ft0002ccnk2zggecbj" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/07/31/C%20%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88/" data-id="ckda7qqh500027onk37lmae8w" class="article-share-link">Share</a>
       
       
     </footer>
@@ -169,7 +223,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/07/31/hello-world/" data-id="ckda2i4fq0001ccnkax55h8nh" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/07/31/hello-world/" data-id="ckda7qqh200017onk6g6v958j" class="article-share-link">Share</a>
       
       
     </footer>
@@ -208,6 +262,14 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2020/07/31/C%E8%AF%AD%E8%A8%802/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2020/07/31/C%E8%AF%AD%E8%A8%80/">(no title)</a>
+          </li>
         
           <li>
             <a href="/2020/07/31/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87C%E8%AF%AD%E8%A8%80%E6%96%87%E7%AB%A0/">(no title)</a>
